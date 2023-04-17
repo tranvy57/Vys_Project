@@ -272,6 +272,11 @@
         width: 100%;
     }
 
+    .header .header-content h1{
+        font-size: 50px;
+        
+    }
+
     .header .header-content .form {
         width: 100%;
     }
