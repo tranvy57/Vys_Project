@@ -9,13 +9,14 @@
 }
 
 .container{
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
     background-color: #040C18;
-    padding: 50px 10%;
+    padding-top: 30px ;
 }
 
 .nav{
+    padding: 0 10%;
     width: 100%;
     color: white;
     display: flex;
@@ -36,22 +37,15 @@
     color: white;
     text-decoration: none;
     font-size: 19px;
-    
 }
 
 .nav .button-group{
     display: flex;
-    gap: 30px;
 }
+
 
 .nav .button-group{
     display: flex;
-    gap: 30px;
-}
-
-.nav .button-group{
-    display: flex;
-    gap: 30px;
 }
 
 .nav .button-group a{
@@ -63,6 +57,227 @@
     border-radius: 5px;
 }
 
+.nav .button-group .menu{
+    display: none;
+}
+
+/* @media (min-width: 1200px){
+    .nav .nav-elements{
+        display: flex;
+        gap: 20px;
+    }
+    
+    .nav  a{
+        font-size: 15px;
+    }
+} */
 
 
+
+/* header */
+.header{
+    display: flex;
+    padding: 10px 5% 10px 10%;
+}
+
+.header .header-img{
+    width: 45%;
+}
+
+.header .header-img img{
+    width: 100%;
+}
+
+.background{
+    position: absolute;
+    width:500px;
+    height:500px;
+    left: 10%;
+    top: 10%;
+    background: #002853;
+    filter: blur(282px);
+}
+
+.header .header-content{
+    width: 55%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    
+}
+
+.header .header-content h1{
+    font-weight: 800;
+    font-size: 55px;
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.header .header-content p{
+    font-weight: 400;
+    color: #81AFDD;
+    font-size: 20px;
+    line-height: 27px;
+    
+}
+
+.header .header-content .form {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    
+    background-color: #052D56;
+    border-radius: 5px;
+}
+
+.header .header-content .form input[type=text] {
+   
+    padding: 15px;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    background-color: #052D56;
+}
+
+.header .header-content .form button {
+    padding: 15px 10px;
+    border: 0;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #FF4820;
+}
+
+.header .header-content .sign-up{
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    gap: 15px;
+}
+
+
+.header .header-content .sign-up  img{
+    width: 20%;
+}
+
+.header .header-content .sign-up p{
+   margin: 0;
+   font-weight: 500;
+   font-size: 12px;
+    
+}
+
+/* mobile */
+@media (max-width: 740px){
+    .container{
+        padding: 5px 0;
+    }
+
+    .nav{
+        padding: 0 3px;
+    }
+    .nav .nav-elements {
+        
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 55px; 
+        right: -100%;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav .nav-elements.active{
+        right: 2%;
+        transition: .4s linear;
+    }
+
+    .nav .button-group .menu{
+        display: block;
+    }
+
+    .nav .nav-elements a{
+        color: #040C18;
+    }  
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 5% 10px 10%;
+    }
+
+    .header .header-content {
+        width: 100%;
+        
+    }
+
+    .header .header-content h1{
+        font-size: 35px;
+        
+    }
+
+    .header .header-content p{
+        font-size: 18px;
+        
+    }
+
+    .header .header-content .form {
+        width: 100%;
+    }
+    
+
+    .header .header-img {
+        width: 100%;
+    }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width:1200px){
+    .nav .nav-elements {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 75px; 
+        right: -100%;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav .nav-elements.active{
+        right: 10%;
+        transition: .4s linear;
+    }
+
+    .nav .button-group .menu{
+        display: block;
+    }
+
+    .nav .nav-elements a{
+        color: #040C18;
+    } 
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 5% 10px 10%;
+    }
+
+    .header .header-content {
+        width: 100%;
+    }
+
+    .header .header-content .form {
+        width: 100%;
+    }
+
+    .header .header-img {
+        width: 100%;
+    }
+}
 
