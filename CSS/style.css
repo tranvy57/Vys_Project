@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600&family=Poppins:wght@100;300;400;500;600&family=Source+Sans+Pro:wght@900&display=swap');
+
+*{
+    font-family: 'Manrope';
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #040C18;
+    padding: 50px 10%;
+}
+
+.nav{
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo{
+    font-weight: 600;
+}
+
+.nav .nav-elements{
+    display: flex;
+    gap: 50px;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    
+}
+
+.nav .button-group{
+    display: flex;
+    gap: 30px;
+}
+
+.nav .button-group{
+    display: flex;
+    gap: 30px;
+}
+
+.nav .button-group{
+    display: flex;
+    gap: 30px;
+}
+
+.nav .button-group a{
+    padding: 10px 20px;
+}
+
+.nav .button-group .sign-up{
+    background-color: #FF4820;
+    border-radius: 5px;
+}
+
+
+
+
