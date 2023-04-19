@@ -133,7 +133,6 @@
 }
 
 .header .header-content .form input[type=text] {
-   
     padding: 15px;
     border: 0;
     border-radius: 5px;
@@ -167,10 +166,28 @@
     
 }
 
-/* mobile */
-@media (max-width: 740px){
-    .container{
-        padding: 5px 0;
+.logo-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logo-container .logo-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo-container .logo-box img{
+    width: 70px;
+}
+
+/* cả mobile và tablet */
+@media (max-width: 1024px){
+    .outer{
+        padding: 10px;
     }
 
     .nav{
@@ -210,77 +227,46 @@
 
     .header .header-content {
         width: 100%;
-        
     }
 
     .header .header-content h1{
-        font-size: 35px;
-        
-    }
-
-    .header .header-content p{
-        font-size: 18px;
-        
+        font-size: 50px; 
     }
 
     .header .header-content .form {
         width: 100%;
     }
-    
 
     .header .header-img {
         width: 100%;
     }
 }
 
-/* tablet */
-@media (min-width: 740px) and (max-width:1200px){
-    .nav .nav-elements {
-        z-index: 1;
-        width: 150px;
-        display: block;
-        position: absolute;
-        top: 75px; 
-        right: -100%;
-        background-color: white;
-        padding: 10px;
-        border-radius: 5px;
-    }
-
-    .nav .nav-elements.active{
-        right: 10%;
-        transition: .4s linear;
-    }
-
-    .nav .button-group .menu{
-        display: block;
-    }
-
-    .nav .nav-elements a{
-        color: #040C18;
-    } 
-    
-    .header{
-        display: flex;
-        flex-direction: column;
-        padding: 10px 5% 10px 10%;
-    }
-
-    .header .header-content {
-        width: 100%;
-    }
+/* mobile */
+@media (max-width: 740px){
 
     .header .header-content h1{
-        font-size: 50px;
+        font-size: 30px; 
+    } 
+
+    .header .header-content p{
+        font-size: 18px;    
+    }
+
+    .header .header-content .form input[type=text] {
+        padding: 5px;
         
     }
-
-    .header .header-content .form {
-        width: 100%;
+    
+    .header .header-content .form button {
+        padding: 5px;
+    
     }
+}
 
-    .header .header-img {
-        width: 100%;
-    }
+/* tablet */
+@media (min-width: 740px) and (max-width:1200px){ 
+    
+    
 }
 
