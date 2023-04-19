@@ -8,6 +8,30 @@
     box-sizing: border-box;
 }
 
+.text-grad{
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.row{
+    padding: 10px 0;
+}
+.text-white{
+    color: #fff;
+}
+
+.content{
+    color: #81AFDD;
+}
+
+.link-orange{
+    color: #FF8A71;
+
+}
+
 .outer{
     width: 100%;
     margin: 0 auto;
@@ -72,6 +96,8 @@
     }
 } */
 
+
+
 /* header */
 .header{
     display: flex;
@@ -108,11 +134,7 @@
 .header .header-content h1{
     font-weight: 800;
     font-size: 55px;
-    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+   
 }
 
 .header .header-content p{
@@ -166,6 +188,8 @@
     
 }
 
+/* .logo-container */
+
 .logo-container{
     width: 100%;
     display: flex;
@@ -183,7 +207,66 @@
 .logo-container .logo-box img{
     width: 70px;
 }
+ 
 
+/* GPT-3 */
+.GPT-3-container{
+    padding: 10%;
+}
+
+.GPT-3-container .GPT-3-box{
+    background-color: #002853;
+    padding: 5%;
+}
+
+.retangle{
+    width: 38px;
+    height: 3px;
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+}
+
+.GPT-3-container .GPT-3-box {
+    padding: 40px;
+    overflow: hidden;
+    background: rgb(92,136,185);
+background: linear-gradient(150deg, rgba(92,136,185,1) 0%, rgba(4,44,84,1) 8%, rgba(4,44,84,1) 83%, rgba(27,120,222,1) 96%);
+    background-repeat: no-repeat;
+}
+
+.GPT-3-container .GPT-3-box .row{
+    padding: 40px;
+}
+
+.GPT-3-container .GPT-3-box h5{
+    line-height: 60px;
+    color: #fff;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.GPT-3-container .GPT-3-box p{
+    color: #81AFDD;
+}
+
+.GPT-3-container .GPT-3-box .row a{
+    float: right;
+}
+
+
+/* .blur1{
+    position: relative;
+    width: 581px;
+    height: 410px;
+    top: -100px;
+    left: -30px;
+    background: #0F4279;
+    filter: blur(100px)
+} */
+
+
+.Feature{
+    padding: 20px 10%;
+}
 /* cả mobile và tablet */
 @media (max-width: 1024px){
     .outer{
@@ -242,6 +325,8 @@
     }
 }
 
+
+
 /* mobile */
 @media (max-width: 740px){
 
@@ -261,6 +346,17 @@
     .header .header-content .form button {
         padding: 5px;
     
+    }
+
+
+    .GPT-3-container .GPT-3-box{
+        background-color: #002853;
+        padding: 10px;
+        
+    }
+
+    .GPT-3-container .GPT-3-box .row{
+        padding: 20px;
     }
 }
 
