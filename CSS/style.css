@@ -270,6 +270,58 @@ background: linear-gradient(150deg, rgba(92,136,185,1) 0%, rgba(4,44,84,1) 8%, r
 .Feature{
     padding: 20px 10%;
 }
+
+.Feature .Feature-text{
+    display: grid; 
+    place-items: left; 
+    align-content: end; 
+}
+
+.Retangle-grad{
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10.7236px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.Retangle-grad h4{
+   font-weight: 600;
+}
+
+.Retangle-grad button{
+    background-color: #000000;
+    border-radius: 20px;
+    color: #fff;
+    padding: 5px 20px;
+    font-weight: 500;
+}
+
+.Blog{
+    padding: 20px 10%;
+}
+
+.Blog img{
+    max-width: 100%;
+
+}
+
+.Blog .blog-box{
+    background-color: #002853;
+    padding: 0;
+    border-radius: 100px 0 0 0;
+}
+
+
+.Blog .blog-content{
+    color: white;
+    background-color: #002853;
+    padding: 20px;
+    
+
+}
 /* cả mobile và tablet */
 @media (max-width: 1024px){
     .outer{
@@ -325,6 +377,10 @@ background: linear-gradient(150deg, rgba(92,136,185,1) 0%, rgba(4,44,84,1) 8%, r
 
     .header .header-img {
         width: 100%;
+    }
+
+    .Retangle-grad{
+        flex-wrap: wrap;
     }
 }
 
