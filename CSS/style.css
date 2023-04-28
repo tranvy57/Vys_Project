@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none !important;  
 }
 
 .text-grad{
@@ -268,7 +269,7 @@ background: linear-gradient(150deg, rgba(92,136,185,1) 0%, rgba(4,44,84,1) 8%, r
 
 
 .Feature{
-    padding: 20px 10%;
+    padding: 50px 10%;
 }
 
 .Feature .Feature-text{
@@ -287,6 +288,8 @@ background: linear-gradient(150deg, rgba(92,136,185,1) 0%, rgba(4,44,84,1) 8%, r
     padding: 30px;
 }
 
+
+
 .Retangle-grad h4{
    font-weight: 600;
 }
@@ -301,6 +304,7 @@ background: linear-gradient(150deg, rgba(92,136,185,1) 0%, rgba(4,44,84,1) 8%, r
 
 .Blog{
     padding: 20px 10%;
+    display: flex;
 }
 
 .Blog img{
@@ -308,20 +312,63 @@ background: linear-gradient(150deg, rgba(92,136,185,1) 0%, rgba(4,44,84,1) 8%, r
 
 }
 
-.Blog .blog-box{
+/* .Blog .blog-box{
     background-color: #002853;
     padding: 0;
     border-radius: 100px 0 0 0;
+    margin-top: 5px;
+} */
+
+
+
+.Blog .blog-left{
+    width: 40%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
 }
+
+.Blog .blog-right{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Blog .blog-right .blog_right-box{
+    width:50%;
+    padding: 0 10px;
+    
+}
+
 
 
 .Blog .blog-content{
     color: white;
     background-color: #002853;
-    padding: 20px;
+    padding: 0 10px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
-
 }
+
+.Blog .blog-left .blog-content{
+    flex-grow: 1;
+    
+    
+}
+
+.footer{
+    margin-top: 100px;
+}
+
+.footer .info p{
+    font-size: 70%;
+    
+}
+
+
 /* cả mobile và tablet */
 @media (max-width: 1024px){
     .outer{
@@ -382,6 +429,23 @@ background: linear-gradient(150deg, rgba(92,136,185,1) 0%, rgba(4,44,84,1) 8%, r
     .Retangle-grad{
         flex-wrap: wrap;
     }
+
+    .Blog {
+        flex-direction: column;
+    }
+
+    .Blog .blog-left{
+        width: 100%; 
+        padding-bottom: 20px;
+    }
+
+    .Blog .blog-right{
+        width: 100%; 
+        
+    }
+
+
+    
 }
 
 
@@ -417,6 +481,15 @@ background: linear-gradient(150deg, rgba(92,136,185,1) 0%, rgba(4,44,84,1) 8%, r
     .GPT-3-container .GPT-3-box .row{
         padding: 20px;
     }
+
+    .footer .info p{
+        text-align: center;
+        
+    }
+
+    
+
+    
 }
 
 /* tablet */
