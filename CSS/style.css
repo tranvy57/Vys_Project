@@ -368,6 +368,27 @@ background: linear-gradient(150deg, rgba(92,136,185,1) 0%, rgba(4,44,84,1) 8%, r
     
 }
 
+.scroll-position {
+    position: fixed;
+    top: 0px;
+    right: 5px;
+    height: 100%;
+}
+
+.scroll-position-indicator {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #ff6ed1;
+    border-radius: 50%;
+    margin-top: 5px;
+    cursor: pointer;
+}
+  
+
 
 /* cả mobile và tablet */
 @media (max-width: 1024px){
